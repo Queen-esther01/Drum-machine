@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gray{
+    background: #F5F7FA;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* From uiverse.io by @adamgiebl */
+/* The switch - the box around the slider */
+.switchtwo {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 4.5em;
+    height: 34px;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Hide default HTML checkbox */
+.switchtwo input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+   
+/* The slider */
+.slidertwo {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: green;
+    transition: .4s;
+    border-radius: 30px;
+    /* color: white;
+    display: block;
+    position: absolute;
+    transform: translate(-20%,-50%);
+    top: 50%;
+    right: 0;
+    font-size: 10px;
+    font-family: Verdana, sans-serif; */
+}
+.slidertwo:after{
+    content: 'Off';
+    color: white;
+    position: absolute;
+    top: 5px;
+    padding: 5px 0 0 45px;
+    font-size: 10px;
+}  
+.slidertwo:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: white;
+    transition: .4s;
+}
+   
+input:checked + .slidertwo {
+    background-color: red;
+}
+   
+input:focus + .slidertwo {
+    box-shadow: 0 0 1px #2196F3;
+}
+    
+input:checked + .slidertwo:before {
+    transform: translateX(2.5em);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+/* .slider:after {
+    content: 'Switch to piano';
+    color: white;
+    display: block;
+    position: absolute;
+    transform: translate(-20%,-50%);
+    top: 50%;
+    right: 0;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+   } */
+   
+   input:checked + .slidertwo:after {
+    content: 'On';
+    color: white;
+    padding-left: 10px;
+   }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* From uiverse.io by @victoryamaykin */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 34px;
+   }
+   
+   .switch input {
+    display: none;
+   }
+   
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3CCC;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+   }
+   
+   .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+   }
+   
+   input:checked + .slider {
+    background-color: #0E6EB8;
+   }
+   
+   input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+   }
+   
+   input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(95px);
+   }
+   
+   /*------ ADDED CSS ---------*/
+   .slider:after {
+    content: 'Switch to piano';
+    color: white;
+    display: block;
+    position: absolute;
+    transform: translate(-20%,-50%);
+    top: 50%;
+    right: 0;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+   }
+   
+   input:checked + .slider:after {
+    content: 'Switch to drum';
+    left: 40%;
+    transform: translate(-50%,-50%);
+   }
+   
+   /*--------- END --------*/
+
+@media(max-width: 360px){
+    .container{
+        width: 20rem;
+    }
 }
