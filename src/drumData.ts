@@ -17,7 +17,8 @@ function Data (){
                     name: 'Chord 1',
                     audio: 'https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3'
                 }
-            ]
+            ], 
+            background: 'bg-amber-300'
         },
         {
             id: useId(),
@@ -34,7 +35,8 @@ function Data (){
                     name: 'Chord 2',
                     audio: 'https://s3.amazonaws.com/freecodecamp/drums/Chord_2.mp3'
                 }
-            ]
+            ],
+            background: 'bg-green-300'
         },
         {
             id: useId(),
@@ -51,7 +53,8 @@ function Data (){
                     name: 'Chord 3',
                     audio: 'https://s3.amazonaws.com/freecodecamp/drums/Chord_3.mp3'
                 }
-            ]
+            ],
+            background: 'bg-cyan-300'
         },
         {
             id: useId(),
@@ -68,7 +71,8 @@ function Data (){
                     name: 'Shaker',
                     audio: 'https://s3.amazonaws.com/freecodecamp/drums/Give_us_a_light.mp3'
                 }
-            ]
+            ],
+            background: 'bg-fuchsia-300'
         },
         {
             id: useId(),
@@ -85,7 +89,8 @@ function Data (){
                     name: 'Open HH',
                     audio: 'https://s3.amazonaws.com/freecodecamp/drums/Dry_Ohh.mp3'
                 }
-            ]
+            ],
+            background: 'bg-indigo-300'
         },
         {
             id: useId(),
@@ -102,7 +107,8 @@ function Data (){
                     name: 'Closed HH',
                     audio: 'https://s3.amazonaws.com/freecodecamp/drums/Bld_H1.mp3'
                 }
-            ]
+            ],
+            background: 'bg-red-300'
         },
         {
             id: useId(),
@@ -119,7 +125,8 @@ function Data (){
                     name: 'Punchy Kick',
                     audio: 'https://s3.amazonaws.com/freecodecamp/drums/punchy_kick_1.mp3'
                 }
-            ]
+            ],
+            background: 'bg-orange-300'
         },
         {
             id: useId(),
@@ -136,7 +143,8 @@ function Data (){
                     name: 'Side Stick',
                     audio: 'https://s3.amazonaws.com/freecodecamp/drums/side_stick_1.mp3'
                 }
-            ]
+            ],
+            background: 'bg-yellow-300'
         },
         {
             id: useId(),
@@ -153,7 +161,8 @@ function Data (){
                     name: 'Snare',
                     audio: 'https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3'
                 }
-            ]
+            ],
+            background: 'bg-purple-300'
         },
     ]
 

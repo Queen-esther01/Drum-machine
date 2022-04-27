@@ -89,7 +89,7 @@ function DrumContainer() {
                         <div className="grid grid-cols-3 gap-3">
                             {
                                 drumPad.map(pad => {
-                                    return  <button key={pad.id} onClick={()=>handlePadClick(pad)} className={`${focus === pad.key ? 'shadow-2xl bg-slate-200 ' : null } drum-pad shadow outline-none text-center py-6 rounded-md`}>
+                                    return  <button key={pad.id} onClick={()=>handlePadClick(pad)} className={`${focus === pad.key ? `shadow-2xl bg-slate-200  ${pad.background} text-white` : null }  drum-pad shadow outline-none text-center py-6 rounded-md`}>
                                                 { pad.key }
                                             </button>
                                 })
